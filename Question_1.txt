@@ -1,0 +1,10 @@
+1) Consider the following scenario. A town has a very popular restaurant. The restaurant can hold N diners. The number of people in the town who wish to eat at the restaurant, and are waiting outside its doors, is much larger than N. The restaurant runs its service in the following manner. Whenever it is ready for service, it opens its front door and waits for diners to come in. Once N diners enter, it closes its front door and proceeds to serve these diners. Once service finishes, the backdoor is opened and the diners are let out through the backdoor. Once all diners have exited, another batch of N diners is admitted again through the front door. This process continues indefinitely. The restaurant does not mind if the same diner is part of multiple batches.
+
+
+Write a C/C++ program to model the diners and the restaurant as threads in a multithreaded program. The threads must be synchronized as follows.
+• A diner cannot enter until the restaurant has opened its front
+door to let people in.
+• The restaurant cannot start service until N diners have come in.
+• The diners cannot exit until the back door is open.
+• The restaurant cannot close the backdoor and prepare for
+the next batch until all the diners of the previous batch have left.
